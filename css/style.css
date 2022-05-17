@@ -84,19 +84,32 @@ nav{
         margin-left: 22px;
         margin-right: 22px;
     }
+    .links {
+        text-align: left;
+        height: 100%;
+    }
     .links ul{
         border-top: 1px solid #e5e5e6;
         position: fixed;
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        width: 100%;
-        text-align: left;
+        text-align: right;
+        background-color: #f6f6eb;
         transition: 0.3s;
     }
      .links ul.active {
+         height: 100%;
+         width: 100%;
+         z-index: 100;
         left: 0;
+        align-items: flex-start;
+        height: 100%;
     }
+
+    .links ul li.log-in{
+    margin-left: 30px;
+}
 
     .links ul li {
         margin: .8rem 2rem;
@@ -195,6 +208,9 @@ nav{
 }
 
 @media (max-width:600px) {
+    .hero-section, .hero{
+        width: 100%;
+    }
     .hero h1{
         font-size: 3rem;
         line-height: 60px;

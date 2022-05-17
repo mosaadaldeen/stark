@@ -15,10 +15,21 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width:1140px) {
+    body{
+        width: 90%
+    };
+}
+
 button{
     border: none;
     outline: none;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+a{
+    cursor: pointer;
 }
 
 nav{
@@ -70,9 +81,9 @@ nav{
 
 @media (max-width:1024px) and (min-width:841px) {
     nav{
-        width: 90%;
-        margin-left: 22px;
-        margin-right: 22px;
+        /* width: 100%; */
+        /* margin-left: 22px;
+        margin-right: 22px; */
     }
     
 }
@@ -146,10 +157,10 @@ nav{
 .hero-section{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    /* flex-direction: row; */
     background-image: url("https://images.getstark.co/site-images/header-homepage.png");
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 55%;
    background-position: 110%; 
 }
 
@@ -179,12 +190,24 @@ nav{
     color: #4b4b4e;
 }
 
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.buttons img{
+    z-index: 1000;
+}
+
 .sign-up-for-free{
     background-color: #381fd1;
-    padding: 10px 25px;
+    padding: 12px 25px;
     color: white;
+    text-align: center;
     font-weight: 800;
-    margin: 30px 20px 0 0;
+    margin: 0 20px 0 0;
     border-radius: 5px;
     width: 180px;
 }
@@ -199,17 +222,20 @@ nav{
 @media (max-width:1140px) {
     .hero-section{
         background: none;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
     .hero p:nth-child(3){
         word-wrap: break-word;
-        /* width: 100%; */
-        /* margin: 0 auto; */
     }
 }
 
 @media (max-width:600px) {
     .hero-section, .hero{
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
     .hero h1{
         font-size: 3rem;
@@ -219,5 +245,12 @@ nav{
         word-wrap: break-word;
         width: 100%;
         font-weight: 500;
+    }
+    .buttons{
+        width: 100%;
+    }
+
+    .buttons a{
+        margin: 10px 5px;
     }
 }

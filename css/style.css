@@ -158,10 +158,10 @@ nav{
     display: flex;
     justify-content: space-between;
     /* flex-direction: row; */
-    background-image: url("https://images.getstark.co/site-images/header-homepage.png");
+    background-image: url('/images/alien.png');
     background-repeat: no-repeat;
-    background-size: 55%;
-   background-position: 110%; 
+    /* background-size: 25%; */
+   background-position: 80%; 
 }
 
 .hero {
@@ -252,5 +252,126 @@ nav{
 
     .buttons a{
         margin: 10px 5px;
+    }
+}
+
+
+/* -----------------------   tools section    ----------------------------------  */
+
+.stark-in-action{
+    text-align: center;
+    margin-top: 230px;
+}
+
+.stark-in-action p:first-child{
+    color: #381fd1;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.stark-in-action h2{
+    font-size: 3rem;
+    letter-spacing: -.01em;
+    line-height: 53px;
+    color: #10284b;
+    font-weight: 900;
+}
+
+.stark-in-action p:nth-child(3){
+    margin: 20px auto;
+    text-align: center;
+    width: 60%;
+    font-size: 22px;
+    font-weight: 500;
+    color: #4b4b4e;
+}
+
+.tabs {
+  background: url('../images/svg2.svg') no-repeat center;
+  width: 80%;
+  margin: 50px auto;
+  position: relative;
+  height: 500px;
+}
+.tabs .tab-header {
+  border: 2px solid;
+  border-radius: 35px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tabs .tab-header > div {
+  position:relative;
+  display:flex;
+    align-items: center;
+  justify-content: center;
+  width:25%;
+  text-align:center;
+  padding:10px;
+  z-index:2;
+  font-weight:600;
+  color:#888;
+  cursor:pointer;
+  transition:all 300ms ease-in-out;
+}
+
+.tabs .tab-header > div.active {
+  color: white;
+  background:  #10284b;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.tabs .tab-header > div img{
+    width: 20px;
+    margin-right: 20px
+}
+
+.tabs .tab-indicator {
+  /* position:absolute; */
+  width:calc(25% - 5px);
+  height:40px;
+  /* background:#d9e5f9; */
+  top:10px;
+  left:10px;
+  border-radius:20px;
+  transition:all 300ms ease-in-out;
+}
+.tabs .tab-body {
+  position:relative;
+  padding:20px;
+  margin-bottom: 40px;
+  height:calc(100% - 50px);
+  overflow:hidden;
+}
+.tabs .tab-body > div {
+  position:absolute;
+  opacity:0;
+  top:-100%;
+  transform:translateY(-10px);
+  transition:opacity 300ms ease-in-out,
+            transform 300ms ease-in-out;
+}
+
+
+.tabs .tab-body > div.active {
+    transform:translateY(0px);
+    top:30px;
+    opacity:1;
+}
+
+.tabs .tab-body > div > img {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .tabs .tab-body {
+        margin: 0 0;
+        width: 100%;
+    }
+
+    .tabs .tab-header >div p{
+        display: none;
     }
 }

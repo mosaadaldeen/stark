@@ -291,7 +291,7 @@ nav{
   width: 80%;
   margin: 50px auto;
   position: relative;
-  height: 500px;
+  height: 600px;
 }
 .tabs .tab-header {
   border: 2px solid;
@@ -320,7 +320,7 @@ nav{
   color: white;
   background:  #10284b;
   padding: 15px;
-  border-radius: 20px;
+  border-radius: 35px;
 }
 
 .tabs .tab-header > div img{
@@ -329,7 +329,7 @@ nav{
 }
 
 .tabs .tab-indicator {
-  /* position:absolute; */
+  position:absolute;
   width:calc(25% - 5px);
   height:40px;
   /* background:#d9e5f9; */
@@ -373,5 +373,144 @@ nav{
 
     .tabs .tab-header >div p{
         display: none;
+    }
+}
+
+
+/* ------------------------------------------------------ */
+.accessibility h1{
+    margin: 30px auto 0 auto;
+    width: 550px;
+    color: #10284b;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.accessibility h1 span{
+    background: url('../images/svg6.svg') no-repeat ;
+}
+
+.accessibility p:nth-child(2){
+    color: #4b4b4e;
+    font-weight: 400;
+    font-size: 20px;
+    width: 70%;
+    margin: 30px auto 60px auto;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards .card{
+    width: 45%;
+    margin-bottom: 70px;
+    padding: 0 50px ;
+}
+
+.cards .card span{
+    color: #381fd1;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.cards .card h3{
+    margin-top: 11px;
+    margin-bottom: 25px;
+    color: #10284b;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 26px;
+}
+
+.cards .card p{
+    color: #4b4b4e;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height:30px;
+}
+
+@media only screen and (max-width: 980px) and (min-width: 600px){
+    .cards{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .cards .card{
+        width: 45%;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 670px) {
+    .accessibility h1{
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .accessibility h1 span{
+        background: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .cards .card{
+        width: 90%;
+        padding: 0 10px;
+    }
+}
+
+/* --------------------------------------------------------------- */
+
+.features{
+    text-align: center;
+}
+
+.features span{
+    color: #381fd1;
+    font-weight: bolder; 
+}
+
+.features h1{
+    font-size: 43px;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #10284b;
+}
+
+.features h1 span{
+    background: url('../images/svg5.svg') no-repeat 40%;
+    color: #10284b;
+}
+
+.features-nums{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.features-nums p{
+    line-height: 30px;
+    color: #4b4b4e;
+    font-size: 16px;
+    font-weight: 600;
+    width: 270px;
+    margin: 20px;
+}
+
+@media (max-width: 630px) {
+    .features h1{
+        width: 100%;
+        text-align: center;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+        white-space: normal;
     }
 }

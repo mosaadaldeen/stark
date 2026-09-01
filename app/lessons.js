@@ -1075,6 +1075,542 @@ const TRACKS = [
       },
     ],
   },
+  {
+    id: "economics",
+    name: "Economics",
+    icon: "💰",
+    blurb: "How incentives actually move the world.",
+    lessons: [
+      {
+        title: "Supply and Demand: The Invisible Hand",
+        source: "Adam Smith, The Wealth of Nations, 1776",
+        body: [
+          "Adam Smith's core insight was that in a competitive market, no central planner needs to set prices, they emerge from the push and pull of buyers wanting more at lower prices and sellers wanting to provide more at higher prices, settling at an equilibrium where the two meet. He called the result of everyone pursuing their own self-interest, without intending it, an outcome that benefits society, the 'invisible hand.'",
+          "When demand rises and supply stays fixed, prices rise, rationing the limited supply toward whoever values it most and is willing to pay. When supply rises faster than demand, prices fall. This isn't a moral judgment about fairness, it's a mechanical description of how a decentralized system allocates scarce resources without any single person deciding who gets what.",
+          "The model has real limits Smith himself acknowledged: it assumes competition, decent information, and no one able to unilaterally control the market. Monopolies, information gaps, and externalities (costs pushed onto people outside the transaction, like pollution) are exactly the cases where the invisible hand stops producing a good outcome, which is why every real economy pairs markets with some regulation.",
+        ],
+        example: "Concert ticket prices for a suddenly popular show spike immediately when demand surges against a fixed number of seats, then fall on secondary markets if that same show fails to sell out, the same mechanism running in both directions.",
+        action: "Pick one price change you've noticed recently (a grocery item, a rideshare surge, a rent increase). Identify whether it was driven by a supply shift, a demand shift, or both.",
+        quiz: {
+          q: "Adam Smith's 'invisible hand' describes how:",
+          options: [
+            "A government planner sets fair prices for everyone",
+            "Individuals pursuing their own self-interest in a competitive market can produce a socially beneficial outcome without intending to",
+            "Prices should always be fixed by law",
+            "Monopolies are good for consumers",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "Opportunity Cost: There's No Free Lunch",
+        source: "Foundational to modern economic reasoning; often traced to Friedrich von Wieser",
+        body: [
+          "Opportunity cost is the value of the next-best alternative you gave up by choosing what you chose. Every decision, including doing nothing, has one, because time and money spent on one thing can't simultaneously be spent on another. The 'cost' of a choice isn't just what you paid, it's also what you didn't get to do instead.",
+          "This is easy to state and surprisingly hard to actually apply, because the cost you paid is visible (the price tag) while the alternative you gave up is invisible (you never experience the path not taken). A founder who keeps a struggling business running for another year isn't just risking the cash spent, they're also spending the year they could have used building something else, a cost that rarely shows up on a balance sheet.",
+          "The phrase 'there's no such thing as a free lunch,' popularized by economist Milton Friedman, captures this: even a genuinely free lunch costs you the time you spent eating it and whatever else that time could have produced. Free things still have an opportunity cost, they just hide it better.",
+        ],
+        example: "Attending a four-year degree costs more than tuition, it also costs four years of the salary you could have earned working instead, an opportunity cost that dwarfs the tuition bill in many career paths.",
+        action: "Name one recurring commitment in your week (a habit, a subscription, a standing meeting). Write down specifically what you'd do with that time or money instead if it disappeared.",
+        quiz: {
+          q: "Opportunity cost refers to:",
+          options: [
+            "Only the direct monetary price of a purchase",
+            "The value of the next-best alternative given up by making a particular choice",
+            "The cost of doing nothing, which is always zero",
+            "A cost that only applies to businesses, not individuals",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "Comparative Advantage",
+        source: "David Ricardo, On the Principles of Political Economy and Taxation, 1817",
+        body: [
+          "Ricardo's insight, one of the few genuinely counterintuitive ideas in economics that nearly all economists still accept, is that two parties can both benefit from trade even if one of them is better at producing everything. What matters isn't who's absolutely better at a task, it's who gives up the least by specializing in it.",
+          "If a brilliant surgeon also happens to type faster than any assistant they could hire, it's still usually better for the surgeon to hire the assistant for typing and spend their own time in surgery, because an hour of surgery is worth far more than an hour of typing, even though the surgeon could do both tasks better than the assistant. The surgeon has an absolute advantage at both, but a comparative advantage only at surgery.",
+          "This is the core argument for why specialization and trade, between individuals, companies, or nations, tend to raise total output even between very unequal partners. It doesn't mean trade has no losers within a country (workers in a displaced industry can genuinely suffer), but it does mean the pie, in aggregate, tends to grow.",
+        ],
+        example: "A country highly efficient at both growing wheat and manufacturing cloth can still gain by importing whichever good it's relatively less efficient at, and exporting the one it's relatively more efficient at, freeing resources for its strongest use.",
+        action: "Identify one task in your week you're decent at but that costs you more valuable time than it saves. Consider whether delegating it, even to someone less skilled at it than you, is the better trade.",
+        quiz: {
+          q: "Comparative advantage explains why trade can benefit both parties because it focuses on:",
+          options: [
+            "Who is absolutely best at every task",
+            "Who gives up the least (lowest opportunity cost) by specializing in a given task",
+            "Which country has more natural resources",
+            "Equal division of all goods produced",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "Inflation: Too Much Money Chasing Too Few Goods",
+        source: "Milton Friedman, 'Inflation is always and everywhere a monetary phenomenon,' 1963",
+        body: [
+          "Inflation is a sustained rise in the general price level, meaning your money buys less over time. Milton Friedman's famous claim was that persistent inflation is, at its root, driven by the money supply growing faster than the economy's actual output of goods and services, not by any single price (like oil or wages) going up on its own.",
+          "This is somewhat contested in its strongest form (supply shocks and expectations play a real role too, as debated heavily during the 2021-2023 inflation surge), but the core mechanism holds up: if a central bank effectively creates more currency than the economy is producing in real value, more money ends up chasing the same amount of goods, and prices rise to absorb the difference.",
+          "Inflation isn't uniformly bad or good, mild, predictable inflation is generally considered healthy because it discourages hoarding cash and gives some flexibility to wages. Unanticipated, high inflation is destructive specifically because it erodes savings, disrupts long-term contracts and planning, and hits fixed-income earners hardest, since their income doesn't adjust as fast as prices do.",
+        ],
+        example: "Weimar Germany's hyperinflation in 1923, where prices could double within days, is the textbook extreme case: the government printed money to pay war debts far faster than the real economy grew, and the currency became nearly worthless.",
+        action: "Look up your country's current inflation rate and compare it to your own recent raises or income changes. Are you actually gaining purchasing power, or just keeping pace?",
+        quiz: {
+          q: "Milton Friedman's core claim about persistent inflation was that it is fundamentally driven by:",
+          options: [
+            "Individual companies raising prices out of greed",
+            "The money supply growing faster than the economy's real output",
+            "Consumers simply spending more than usual",
+            "International trade agreements",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "The Tragedy of the Commons",
+        source: "Garrett Hardin, Science, 1968",
+        body: [
+          "Hardin's essay described a scenario: a shared pasture where any herder can graze cattle freely. Each herder gains the full benefit of adding one more animal, while the cost of overgrazing is spread across everyone who shares the pasture. Rational self-interest, for each individual herder, points toward adding more animals, even though the pasture collapses if everyone does the same.",
+          "This is the structural problem behind many of the hardest collective-action failures: overfishing shared waters, carbon emissions, groundwater depletion, and traffic congestion all share this same shape, a shared, non-excludable resource where individual incentive and collective outcome pull in opposite directions.",
+          "Elinor Ostrom, who later won the Nobel Prize partly for challenging Hardin's pessimistic framing, found through extensive fieldwork that communities frequently do manage shared resources sustainably without top-down government control or full privatization, through locally-developed rules, monitoring, and social trust, showing the tragedy isn't inevitable, but it does require deliberate institutional design to avoid.",
+        ],
+        example: "Many of the world's collapsed fisheries (Atlantic cod off Newfoundland in the 1990s is the classic case) followed this exact pattern: each fishing operator had individual incentive to catch as much as possible before others did, until the shared fish stock collapsed for everyone.",
+        action: "Identify one shared resource in your own life or workplace (a shared fridge, shared equipment, shared credit for a project). Name the specific rule or norm that currently prevents, or fails to prevent, overuse of it.",
+        quiz: {
+          q: "Elinor Ostrom's research challenged Hardin's original framing by showing that:",
+          options: [
+            "Shared resources always collapse without exception",
+            "Communities can often manage shared resources sustainably through locally-developed rules and trust, without full privatization or government control",
+            "Only government ownership can prevent resource collapse",
+            "Private ownership is the only solution that has ever worked",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "Diminishing Marginal Returns",
+        source: "Classical economics, formalized through 19th-century marginalist theory",
+        body: [
+          "The law of diminishing marginal returns says that as you keep adding more of one input (while holding others fixed), each additional unit eventually produces a smaller gain than the one before it. The first employee you hire might double your output, the fiftieth added to an already-crowded team might add almost nothing, or even get in the way.",
+          "This isn't pessimism about growth, it's a description of a specific, common shape: gains that start strong and then flatten. It shows up far beyond factories: the first hour of focused study teaches you more than the fifth hour in the same sitting, the first slice of pizza satisfies more than the eighth, and the first $10,000 of marketing spend often outperforms the next $10,000 by a wide margin.",
+          "The practical use is knowing where you are on the curve before pouring in more of a single resource. If you're already deep into diminishing returns on one input, the better move is usually redirecting toward a different input entirely (better systems, a different channel, rest) rather than simply adding more of the same thing.",
+        ],
+        example: "A farmer adding more and more fertilizer to the same plot of land sees crop yield rise sharply at first, then flatten, and eventually decline if fertilizer is added well past the point the soil and plants can actually use it.",
+        action: "Pick one area where you've been 'adding more' to try to improve results (hours worked, ad spend, study time). Honestly assess whether you're still on the steep part of the curve or already flattening out.",
+        quiz: {
+          q: "Diminishing marginal returns describes a situation where:",
+          options: [
+            "Every additional unit of input produces a larger gain than the last",
+            "Each additional unit of one input, with others held fixed, eventually produces a smaller gain than the previous unit",
+            "Output stops entirely after a fixed number of inputs",
+            "Only applies to agriculture, not other industries",
+          ],
+          correct: 1,
+        },
+      },
+    ],
+  },
+  {
+    id: "negotiation",
+    name: "Negotiation",
+    icon: "🤝",
+    blurb: "Get to a better deal, not just a faster one.",
+    lessons: [
+      {
+        title: "BATNA: Your Best Alternative",
+        source: "Roger Fisher & William Ury, Getting to Yes, 1981",
+        body: [
+          "BATNA (Best Alternative To a Negotiated Agreement) is the single most important concept from Fisher and Ury's Harvard Negotiation Project: it's what you'll do if this specific negotiation fails entirely. Your negotiating power comes far less from arguing well and far more from how good your walk-away option actually is.",
+          "A common mistake is walking into a negotiation with only a vague sense of your alternative ('I guess I'd look for another job'), rather than a concrete, researched one ('I have a written offer at $X from another company'). A strong, specific BATNA lets you negotiate calmly and walk away from a bad deal without panic, because you already know exactly what you'll do instead.",
+          "The practical discipline: before any important negotiation, spend real time actually strengthening your BATNA, not just estimating it. Getting a second job offer before a salary negotiation, or lining up a second vendor before a contract renewal, changes your actual leverage far more than any clever tactic used at the table.",
+        ],
+        example: "Salary negotiation coaches consistently find that candidates with a competing written offer in hand negotiate meaningfully better outcomes than candidates with an identical resume but no alternative offer, because the BATNA is concrete rather than hypothetical.",
+        action: "Before your next negotiation of any kind, write down your actual BATNA in one specific sentence, not a vague feeling, an actual fallback you could execute today.",
+        quiz: {
+          q: "BATNA refers to:",
+          options: [
+            "The first offer you make in a negotiation",
+            "Your best alternative if the current negotiation fails, which is the real source of your leverage",
+            "A negotiation tactic involving flattery",
+            "The final signed agreement",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "Separate the People from the Problem",
+        source: "Fisher & Ury, Getting to Yes",
+        body: [
+          "One of the core principles of the Harvard Negotiation method is treating the relationship and the substantive issue as two separate tracks. It's easy to let a tense disagreement about terms turn into a personal conflict, and once that happens, both sides start defending ego and position instead of solving the actual problem.",
+          "The practical move is to attack the problem jointly, side by side, rather than attacking each other across the table. Fisher and Ury's phrasing: be 'hard on the problem, soft on the people.' A useful habit is literally naming the shared problem out loud ('we both want this deal to close, the sticking point is the delivery timeline') to redirect energy away from blame and back toward the specific gap.",
+          "This doesn't mean avoiding disagreement, it means keeping the disagreement about interests and facts, not about character or intent. Accusing the other side of bad faith almost always escalates a negotiation, even when the accusation is accurate, because it shifts the conversation from solvable to personal.",
+        ],
+        example: "Skilled mediators in divorce or business-dissolution negotiations routinely reframe accusatory statements ('you're being unreasonable about the split') into problem statements ('we have $X to divide and two different views on a fair split'), specifically to prevent personal conflict from blocking a solvable issue.",
+        action: "In your next disagreement, notice if you're arguing about the person's character or intent versus the actual issue. Consciously restate the issue as a shared problem before responding.",
+        quiz: {
+          q: "The Harvard Negotiation Project's principle of 'separating people from the problem' means:",
+          options: [
+            "Avoiding the other party entirely",
+            "Being hard on the substantive issue while staying respectful toward the person, rather than letting disagreement become personal conflict",
+            "Never disagreeing with the other side",
+            "Only negotiating through intermediaries",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "Tactical Empathy",
+        source: "Chris Voss, Never Split the Difference, 2016",
+        body: [
+          "Chris Voss, a former FBI lead hostage negotiator, built his approach around 'tactical empathy,' understanding and articulating the other side's perspective and feelings, not because you agree with them, but because being deeply understood lowers a counterpart's defensiveness and opens genuine dialogue.",
+          "The specific tool Voss teaches is labeling: naming an emotion you observe in the other person, out loud, in a low-key way ('It seems like the timeline is really the sticking point for you' or 'It sounds like you're worried this won't get approved'). This isn't therapy, it's a negotiation tactic: once someone feels accurately heard, they typically become less defensive and more willing to problem-solve with you rather than against you.",
+          "Voss contrasts this with the older, more adversarial 'win-lose' negotiation style taught in earlier business books. His hostage-negotiation background gave him a hard constraint most negotiators never face: you cannot force a hostage-taker to comply through leverage or threats, you can only get there by genuinely understanding and working with their perceived reality.",
+        ],
+        example: "Voss describes hostage negotiations where simply labeling a captor's fear ('it sounds like you're worried about what happens if you surrender') opened a productive conversation that pure demands and threats had completely failed to produce.",
+        action: "In your next difficult conversation, try labeling the other person's emotion out loud ('it sounds like...', 'it seems like...') before stating your own position, and notice how the tone of the conversation shifts.",
+        quiz: {
+          q: "Chris Voss's 'labeling' technique in tactical empathy involves:",
+          options: [
+            "Naming an emotion you observe in the other person, out loud, to make them feel understood",
+            "Immediately stating your own demands",
+            "Refusing to acknowledge the other person's feelings",
+            "Only used in hostage situations, not everyday negotiation",
+          ],
+          correct: 0,
+        },
+      },
+      {
+        title: "The Power of 'No'",
+        source: "Chris Voss, Never Split the Difference",
+        body: [
+          "Most negotiation training treats 'yes' as the goal and 'no' as a failure to push past. Voss argues the opposite: a premature 'yes' is often meaningless (people say yes to end an uncomfortable conversation, not because they're actually committed), while 'no' frequently signals the start of a real, substantive conversation, because it makes the other person feel safe and in control.",
+          "Voss recommends framing questions so 'no' is a genuinely safe answer, rather than pushing for an early yes. 'Is now a bad time to talk?' invites a comfortable 'no' (meaning: now is fine) that gets someone talking, more reliably than 'Do you have a minute?' which can feel like a trap they need to escape.",
+          "The deeper principle: people negotiate more honestly and productively when they don't feel cornered. Removing the pressure to say yes, paradoxically, often gets you to a real agreement faster than chasing agreement directly, because it lowers the other side's guard instead of raising it.",
+        ],
+        example: "Cold-call sales scripts that open with 'Is this a bad time?' rather than 'Do you have a few minutes?' have been found to produce longer, more substantive conversations, because the question makes a comfortable 'no' available instead of forcing an awkward yes.",
+        action: "In your next request of someone, phrase your question so that 'no' is a comfortable, safe answer for them to give, and notice whether the conversation opens up more than usual.",
+        quiz: {
+          q: "According to Voss, why does inviting a comfortable 'no' often work better than pushing for an early 'yes'?",
+          options: [
+            "Because 'no' always means the negotiation has failed",
+            "Because people feel safer and more in control, which makes them more likely to engage honestly",
+            "Because it ends the conversation faster",
+            "Because 'no' legally binds the other party",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "Calibrated Questions",
+        source: "Chris Voss, Never Split the Difference",
+        body: [
+          "A calibrated question is an open-ended question, usually starting with 'What' or 'How,' that hands the other side a problem to solve in your favor, without them feeling pushed or cornered. 'How am I supposed to do that?' or 'What about this doesn't work for you?' invites the other person to help find the solution, rather than simply rejecting your position outright.",
+          "Voss deliberately avoids 'Why' questions in this technique, since 'why' tends to sound accusatory and trigger defensiveness ('Why did you do that?' lands very differently than 'What led to that decision?'), even when the underlying curiosity is identical.",
+          "The strategic value: a calibrated question shifts the other party from opponent to problem-solver on your behalf. Instead of you presenting the case for why their position is wrong, you get them articulating, in their own words, the obstacles and possible solutions, which they're far more likely to actually follow through on than a solution you simply handed them.",
+        ],
+        example: "Instead of demanding 'You need to lower this price,' a calibrated version, 'How am I supposed to make this work at that price?', invites the other side to actively problem-solve the gap with you rather than simply defending their original number.",
+        action: "In your next negotiation or disagreement, replace one direct demand with a calibrated 'How' or 'What' question, and see if the other person starts problem-solving alongside you instead of against you.",
+        quiz: {
+          q: "Calibrated questions in negotiation typically avoid starting with 'Why' because:",
+          options: [
+            "'Why' questions are grammatically incorrect",
+            "'Why' tends to sound accusatory and trigger defensiveness, compared to 'What' or 'How'",
+            "'Why' questions always require a written response",
+            "'Why' questions are only used by lawyers",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "Anchoring the Number First",
+        source: "Negotiation research on first-offer effects; Adam Galinsky & Thomas Mussweiler",
+        body: [
+          "In price negotiations specifically, research on anchoring (see the Psychology track for the general effect) shows the first number stated tends to pull the final agreed price toward it, more than most negotiators expect. Studies by Galinsky and Mussweiler found negotiators who made the first offer, whether buyer or seller, ended up with more favorable final outcomes than those who waited for the other side to open.",
+          "This runs against older negotiation folklore that said 'never make the first offer, you'll reveal too much.' The updated, research-backed advice: if you have reasonable information about the deal's actual range, opening first, with a well-justified, ambitious-but-defensible number, sets a favorable anchor the rest of the negotiation adjusts around.",
+          "The caveat matters: an anchor that's wildly unrealistic can backfire, damaging credibility or ending the negotiation before it starts. The technique works best paired with a clear rationale for the number (comparable sales, cost breakdown, market data), not just a number pulled from thin air.",
+        ],
+        example: "Real estate agents typically coach sellers to list at a well-justified, ambitious price rather than a 'safe' lower one, precisely because that listing price anchors every buyer offer that follows.",
+        action: "Before your next price negotiation, prepare a well-justified opening number in advance, along with the specific reasoning behind it, rather than waiting to hear the other side's number first.",
+        quiz: {
+          q: "Research by Galinsky and Mussweiler on first offers in negotiation found that:",
+          options: [
+            "Making the first offer always leads to a worse outcome",
+            "Making the first offer, when reasonably informed, tends to produce a more favorable final outcome by anchoring the negotiation",
+            "It makes no measurable difference who offers first",
+            "Only sellers should ever make the first offer",
+          ],
+          correct: 1,
+        },
+      },
+    ],
+  },
+  {
+    id: "leadership",
+    name: "Leadership",
+    icon: "🧭",
+    blurb: "What actually makes people follow you.",
+    lessons: [
+      {
+        title: "Psychological Safety: The Single Biggest Team Predictor",
+        source: "Amy Edmondson, The Fearless Organization; Google's Project Aristotle, 2015",
+        body: [
+          "Amy Edmondson defined psychological safety as a shared belief that a team is safe for interpersonal risk-taking, that you won't be punished or humiliated for speaking up with an idea, a question, a concern, or a mistake. Her research began by studying hospital teams and, counterintuitively, found that the teams reporting more errors weren't making more mistakes, they were simply safe enough to admit and report them, unlike lower-safety teams quietly hiding the same errors.",
+          "Google's internal 'Project Aristotle,' a multi-year study of what actually made its own teams effective, tested for factors like skill level, seniority mix, and personality composition, and found psychological safety was the single strongest predictor of team performance, ahead of every other factor studied.",
+          "In practice, leaders build this less through grand gestures and more through consistent small reactions: how you respond the first time someone admits a mistake or challenges your idea sets the norm for the entire team, far more than any stated value on a wall.",
+        ],
+        example: "Edmondson's hospital research found that units with stronger nurse-physician relationships and open communication reported more medication errors, not because they made more errors, but because staff felt safe enough to report them instead of concealing them.",
+        action: "Next time someone on your team brings you a mistake or a disagreement, notice your first reaction in the moment. Was it curiosity, or something that would make them hesitate next time?",
+        quiz: {
+          q: "Google's Project Aristotle found that the strongest predictor of team effectiveness was:",
+          options: [
+            "The average IQ of team members",
+            "Psychological safety, more than any other factor studied",
+            "Team size",
+            "Years of experience on the team",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "Radical Candor: Care Personally, Challenge Directly",
+        source: "Kim Scott, Radical Candor, 2017",
+        body: [
+          "Kim Scott, drawing on her time managing at Google and Apple, built a simple two-axis framework for feedback: how much you personally care about someone, and how directly you challenge them. Radical Candor sits where both are high, you clearly care about the person and you're willing to tell them the hard truth directly.",
+          "The framework's real value is naming the two common failure modes leaders fall into. 'Ruinous Empathy' is high care but low challenge, being so worried about someone's feelings that you soften or withhold feedback they actually need, which Scott argues is the single most common and most damaging management failure, since it feels kind but actually withholds the information someone needs to improve. 'Obnoxious Aggression' is high challenge but low care, blunt criticism delivered without regard for the person, which technically gives the information but destroys trust in the process.",
+          "The corrective habit Scott recommends: state feedback in the same breath as clear care, and do it soon after the moment, not saved up for a formal review months later, when both the specifics and the relevance have faded.",
+        ],
+        example: "A manager who avoids telling a struggling employee about a real performance problem, out of kindness, until a scheduled annual review, has often let 'Ruinous Empathy' cost that employee months they could have used to actually fix the issue.",
+        action: "Think of one piece of feedback you've been avoiding giving someone out of concern for their feelings. Give it this week, directly, alongside a clear statement of why you care about their success.",
+        quiz: {
+          q: "In Kim Scott's framework, 'Ruinous Empathy' describes feedback that is:",
+          options: [
+            "High in both care and direct challenge",
+            "High in care but low in direct challenge, withholding needed feedback to avoid discomfort",
+            "Low in care but high in direct challenge",
+            "Low in both care and challenge",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "The Peter Principle",
+        source: "Laurence J. Peter & Raymond Hull, The Peter Principle, 1969",
+        body: [
+          "The Peter Principle observes that in a hierarchy, employees tend to be promoted based on performance in their current role, until they reach a role they're not competent at, and then they stay there, since further promotion stops. The blunt summary: 'employees rise to their level of incompetence.'",
+          "The mechanism is structural, not a claim that people are lazy or unqualified in general: the skills that make someone excellent in one role (a great salesperson, a great engineer) are frequently not the skills required in the role they get promoted into (managing other salespeople, managing other engineers), yet promotion decisions are usually based on performance in the old role, not demonstrated ability in the new one.",
+          "A 2018 empirical study of sales organizations by Benson, Li, and Shue, using real personnel data, found direct evidence for exactly this pattern: firms tended to promote their best salespeople into management, and those promotions frequently produced worse-performing sales teams, while simultaneously firms rarely rewarded management skill directly when it existed independent of individual sales performance.",
+        ],
+        example: "The 2018 Benson, Li, and Shue study found that firms were about as likely to promote based on current-role sales performance as on any actual signal of managerial skill, meaning a top individual performer with poor people skills was still a common promotion choice into management.",
+        action: "If you're evaluating a promotion decision (your own or someone else's), separate two questions explicitly: are they excellent at their current role, and do they show actual evidence of skill in what the new role requires?",
+        quiz: {
+          q: "The 2018 empirical study by Benson, Li, and Shue on sales organizations found that:",
+          options: [
+            "Promoting top salespeople into management consistently improved team performance",
+            "Firms often promoted based on current-role sales performance rather than demonstrated managerial skill, and those promotions frequently hurt team performance",
+            "Management skill was always rewarded independently of sales performance",
+            "The Peter Principle does not apply to real organizations",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "Situational Leadership",
+        source: "Paul Hersey & Ken Blanchard, Management of Organizational Behavior, 1969",
+        body: [
+          "Hersey and Blanchard's model argues there's no single 'best' leadership style, the right approach depends on a specific follower's competence and commitment for a specific task, not a fixed trait of the leader or a fixed trait of the follower across every situation.",
+          "The model describes four rough styles: directing (high guidance, low support, for someone new and unsure), coaching (high guidance, high support, for someone building skill but needing encouragement), supporting (low guidance, high support, for someone skilled but needing confidence or motivation), and delegating (low guidance, low support, for someone both skilled and confident). The same person might need directing on a brand-new task and delegating on a task they've mastered, in the same week.",
+          "The common leadership mistake this model highlights: applying one default style to everyone regardless of the situation, either micromanaging a skilled, confident person who needs autonomy, or under-supporting a struggling person who actually needs more hands-on guidance, both mismatches that predictably frustrate the person being led.",
+        ],
+        example: "A new hire on their first week doing a task they've never done needs directing (clear, specific instruction), while that same hire six months later, now skilled at that specific task, is better served by delegating, being handed autonomy rather than close instruction they no longer need.",
+        action: "Pick one person you lead or work closely with. For one specific task they're doing, honestly assess their competence and confidence level, and check whether your current level of guidance actually matches it.",
+        quiz: {
+          q: "Situational Leadership theory argues that the right leadership style should be based primarily on:",
+          options: [
+            "The leader's personal preferred style, applied consistently to everyone",
+            "A specific follower's competence and commitment for the specific task at hand",
+            "The size of the organization",
+            "The follower's job title alone",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "Start With Why",
+        source: "Simon Sinek, Start With Why, 2009",
+        body: [
+          "Sinek's 'Golden Circle' argues that most organizations communicate from the outside in, what they do, then how, and rarely why. He argues the most influential leaders and organizations reverse this, leading with why, the underlying purpose or belief driving the work, because that's what people actually connect with emotionally, before the specifics of what's being offered.",
+          "His frequently cited example: Apple doesn't just describe what it makes (computers) or how (great design, easy to use), its marketing leads with why (challenging the status quo, thinking differently), and Sinek argues that ordering is what makes Apple's communication distinctly persuasive compared to competitors selling comparable specs.",
+          "Worth the same honesty this app applies elsewhere: Sinek's model is a popular framework built on selective business anecdotes and a simplified reading of neuroscience (his claim that the limbic brain processes 'why' is not rigorously established science), rather than controlled research. Treat it as a genuinely useful communication heuristic, articulate your purpose clearly, and lead with it, rather than a scientifically proven law of persuasion.",
+        ],
+        example: "Sinek contrasts Apple's why-first marketing with a hypothetical computer company that leads only with specs and price, arguing the spec-first approach, even with an equally good product, generates less loyalty and emotional connection.",
+        action: "Write one sentence stating the 'why' behind a project you're currently working on, the underlying purpose, not the task list. Try leading with that sentence next time you describe the project to someone else.",
+        quiz: {
+          q: "A fair, honest assessment of Sinek's 'Start With Why' framework is that it is:",
+          options: [
+            "A rigorously proven neuroscience finding with no legitimate criticism",
+            "A popular, useful communication heuristic built mostly on selected business anecdotes, not controlled scientific research",
+            "Entirely disproven and without practical value",
+            "Only applicable to nonprofit organizations",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "Servant Leadership",
+        source: "Robert K. Greenleaf, The Servant as Leader, 1970",
+        body: [
+          "Greenleaf, a former AT&T executive, proposed a reversal of the traditional leadership hierarchy: a servant-leader's primary aim is serving the growth, autonomy, and wellbeing of the people they lead, with organizational authority following from that service, rather than authority coming first and service being an optional add-on.",
+          "Greenleaf's own test for whether servant leadership is actually happening, not just claimed: 'Do those served grow as persons? Do they, while being served, become healthier, wiser, freer, more autonomous, more likely themselves to become servants?' It's a results-based test, not a claim about a leader's stated intentions or personal humility.",
+          "A common misreading treats servant leadership as simply being nice or avoiding hard decisions. Greenleaf's own writing doesn't support that: serving someone's actual growth frequently requires hard feedback, high expectations, and difficult decisions, the test is whether those decisions are made in service of the other person's genuine development, not the leader's comfort or ego.",
+        ],
+        example: "A manager who takes time to genuinely develop a struggling employee's skills, including through direct, sometimes uncomfortable feedback, rather than simply reassigning their work to someone stronger, is closer to Greenleaf's servant-leadership test than a manager who avoids all friction.",
+        action: "Apply Greenleaf's test to your own leadership this week: pick one person you lead, and ask honestly whether your recent decisions about their work have made them more capable and autonomous, or just made your own job easier.",
+        quiz: {
+          q: "Greenleaf's own test for servant leadership focuses on whether:",
+          options: [
+            "The leader is well-liked by everyone",
+            "Those being served grow as people, becoming healthier, wiser, freer, and more autonomous",
+            "The leader avoids all difficult decisions",
+            "The organization grows its revenue",
+          ],
+          correct: 1,
+        },
+      },
+    ],
+  },
+  {
+    id: "writing",
+    name: "Writing & Communication",
+    icon: "✍️",
+    blurb: "Say more with less, and get read.",
+    lessons: [
+      {
+        title: "Omit Needless Words",
+        source: "William Strunk Jr. & E.B. White, The Elements of Style, 1959",
+        body: [
+          "Strunk's original 1918 rule, later expanded by his student E.B. White, is blunt: 'Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines.' This isn't a call to write short sentences only, it's a call to cut every word that isn't earning its place.",
+          "In practice, this means catching and removing common padding: 'due to the fact that' becomes 'because,' 'in order to' becomes 'to,' 'at this point in time' becomes 'now.' None of these cuts change the meaning, they just remove friction between the reader and the idea.",
+          "The deeper reason this matters: every unnecessary word is a small tax on the reader's attention. In a world of constant competing claims on that attention, writing that respects it, by saying exactly what it means and stopping, gets read, remembered, and trusted more than writing that meanders to reach the same point.",
+        ],
+        example: "A sentence like 'It is important to note that the reason for the delay was due to the fact that the shipment was late' can be cut, with zero meaning lost, to 'The shipment was late,' removing three separate layers of unnecessary padding.",
+        action: "Take one email or message you're about to send. Reread it once specifically hunting for phrases you can cut entirely without losing meaning, then send the shorter version.",
+        quiz: {
+          q: "Strunk and White's core writing principle is that a piece of writing should:",
+          options: [
+            "Always use the longest, most formal vocabulary available",
+            "Contain no unnecessary words, sentences, or paragraphs, similar to a drawing having no unnecessary lines",
+            "Be written in the passive voice for formality",
+            "Avoid all short sentences",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "The Curse of Knowledge",
+        source: "Steven Pinker, The Sense of Style, 2014",
+        body: [
+          "Steven Pinker, a cognitive scientist, argues the single biggest reason writing is unclear isn't a lack of skill, it's the 'curse of knowledge': once you know something well, it becomes almost impossible to imagine what it's like not to know it, so you unconsciously skip explanations a reader actually needs, using jargon and shorthand that feels obvious to you and opaque to them.",
+          "This is the same underlying mechanism as expert-teacher mismatch discussed elsewhere in this app (see the Dunning-Kruger lesson): expertise makes certain knowledge invisible to the person who has it. A doctor explaining a diagnosis, an engineer explaining a bug, a manager explaining a decision, all routinely underestimate what their audience doesn't already know.",
+          "Pinker's practical remedy is deliberately checking your draft against a specific, real reader who genuinely lacks your background, not an idealized 'general audience.' Reading your own writing aloud to someone outside your field, and watching exactly where they get lost, catches curse-of-knowledge gaps far more reliably than rereading it yourself, since you'll unconsciously fill the gaps as you read.",
+        ],
+        example: "Pinker cites academic writing as a chronic offender: papers dense with unexplained field-specific jargon that authors themselves no longer notice as jargon, because within their own field it functions as ordinary, unremarkable vocabulary.",
+        action: "Take a piece of writing you've produced for work. Read it to, or have it read by, someone genuinely outside that specific topic, and note the exact sentence where they first get confused.",
+        quiz: {
+          q: "Pinker's 'curse of knowledge' describes how:",
+          options: [
+            "Experts intentionally use jargon to sound smarter",
+            "Once you know something well, it becomes hard to imagine what it's like not to know it, causing you to skip explanations your reader actually needs",
+            "Knowledge always makes writing clearer",
+            "Only technical fields suffer from unclear writing",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "Show, Don't Tell",
+        source: "Long-standing creative-writing principle, often traced to Anton Chekhov",
+        body: [
+          "The advice is usually summarized from a version of a line attributed to Chekhov: 'Don't tell me the moon is shining, show me the glint of light on broken glass.' 'Telling' states a conclusion directly ('She was furious'). 'Showing' gives the specific, concrete detail that lets the reader reach that conclusion themselves ('She set the glass down hard enough to crack the base').",
+          "This works because a reader arriving at a conclusion themselves, from concrete evidence, engages and retains it more than being handed the conclusion directly, the same underlying mechanism behind why the Storytelling lesson in the Public Speaking track found specific stories outperform abstract statistics.",
+          "The principle isn't absolute, skilled writers 'tell' constantly to move quickly through less important information, and pure unrelenting 'showing' can bloat a piece badly. The useful discipline is reserving 'showing' for the moments that actually matter to your point, and 'telling' efficiently everywhere else.",
+        ],
+        example: "A performance review that states 'the report was well-researched' tells the reader nothing memorable, while one that notes 'the report cross-checked every claim against three independent sources, catching an error the original data had missed' shows specific, memorable evidence of the same underlying claim.",
+        action: "Find one sentence in something you've written recently that simply states a conclusion ('the meeting was productive,' 'the results were strong'). Rewrite it with one concrete, specific detail that lets the reader reach that conclusion themselves.",
+        quiz: {
+          q: "The 'show, don't tell' principle argues that specific, concrete detail is generally more effective than a stated conclusion because:",
+          options: [
+            "It's always shorter to write",
+            "A reader who reaches a conclusion themselves from concrete evidence engages with and retains it more than being handed the conclusion directly",
+            "Stated conclusions are grammatically incorrect",
+            "It should be used in absolutely every sentence with no exceptions",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "The Inverted Pyramid",
+        source: "Journalism convention, formalized in early 20th-century newswriting practice",
+        body: [
+          "The inverted pyramid structures a piece of writing with the most important information first, the core conclusion or news, followed by supporting detail in decreasing order of importance, rather than building up to a conclusion at the end. It's the opposite structure of a mystery novel or an academic paper, which withhold the key point until late.",
+          "The structure exists for a specific, practical reason: newspaper editors historically needed to cut articles from the bottom to fit available space, and readers themselves rarely finish an entire article. Putting the essential information first means the piece still works, for both the editor's cut and the reader's attention span, even if only the opening lines are read.",
+          "This structure has outlasted its print-newspaper origin because the underlying reader behavior it's built for, skimming, scanning, deciding fast whether to keep reading, is now the default mode for nearly all professional writing: emails, reports, and messages are almost always skimmed first, read fully second, if at all.",
+        ],
+        example: "A well-written work email leads with the actual ask or decision needed ('I need your approval on the Q3 budget by Friday') rather than building up to it after several paragraphs of context the reader may never reach.",
+        action: "Before sending your next email or report, check whether the single most important sentence is currently first. If it's buried, move it to the top.",
+        quiz: {
+          q: "The inverted pyramid structure in writing puts:",
+          options: [
+            "The least important information first, building suspense toward a conclusion",
+            "The most important information first, followed by supporting detail in decreasing importance",
+            "All information in strict chronological order regardless of importance",
+            "Only questions, with no direct statements",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "Active vs Passive Voice",
+        source: "Standard style guidance; George Orwell, Politics and the English Language, 1946",
+        body: [
+          "Active voice puts the subject doing the action first ('The committee rejected the proposal'). Passive voice puts the object of the action first, and often drops who did it entirely ('The proposal was rejected'). Active voice is generally clearer and more direct because it names who did what, passive voice can obscure it, sometimes usefully, sometimes evasively.",
+          "George Orwell's 1946 essay argued that passive voice is frequently used deliberately in political and bureaucratic writing specifically to hide responsibility. 'Mistakes were made' is a famous example of passive voice used to describe an error while carefully avoiding naming who made it, a pattern common enough in official apologies that it's become a recognized cliché of evasive language.",
+          "Passive voice isn't always wrong, it's genuinely useful when the actor is truly unknown or irrelevant ('the bridge was built in 1932') or when you deliberately want to emphasize the object over the actor. The discipline worth building is noticing when you've defaulted to passive voice and asking whether you're clarifying or quietly dodging responsibility.",
+        ],
+        action: "Find one passive-voice sentence in something you've recently written. Rewrite it in active voice, naming the actor directly, and notice whether that changes how accountable the sentence feels.",
+        example: "'Mistakes were made' names no one; 'I approved this budget without checking the numbers' names exactly who did what, and the difference in how each one reads to an audience is not accidental.",
+        quiz: {
+          q: "Orwell's critique of passive voice in political writing was that it is frequently used to:",
+          options: [
+            "Make sentences shorter and more efficient",
+            "Obscure or avoid naming who is responsible for an action",
+            "Improve the reader's comprehension",
+            "Follow strict grammatical rules with no other effect",
+          ],
+          correct: 1,
+        },
+      },
+      {
+        title: "The Rule of Three",
+        source: "Classical rhetoric; widely used in modern speechwriting and comedy",
+        body: [
+          "The rule of three observes that information and ideas presented in groups of three are more memorable, more satisfying, and often more persuasive than groups of two or four. It shows up across rhetoric ('life, liberty, and the pursuit of happiness'), comedy (the classic setup-setup-punchline structure), and storytelling (three little pigs, three wishes, three acts).",
+          "The likely reason is cognitive: two items can feel like an incomplete comparison, and four or more starts to strain short-term working memory and lose rhythmic punch, while three is the smallest number that reliably creates a felt sense of a complete pattern, enough to establish a rhythm, but not so many that it becomes a list.",
+          "This is a genuinely testable writing habit, not just a stylistic preference: when you're choosing how many examples, options, or points to present, three is usually the sweet spot for what an audience will actually retain, well above whatever the 'complete' or 'exhaustive' number might be.",
+        ],
+        example: "Winston Churchill's 'blood, toil, tears, and sweat' is often misremembered as just three items, 'blood, sweat, and tears,' precisely because the three-item rhythm is so much more memorable that popular memory has actually reshaped the original quote to fit it.",
+        action: "Take a list you're presenting this week (options, reasons, examples). If it currently has more than three items, cut it down to the three most important, and notice how much more it sticks.",
+        quiz: {
+          q: "The rule of three in rhetoric and writing suggests that:",
+          options: [
+            "Any number of items in a list is equally memorable",
+            "Groups of three items tend to be more memorable and rhythmically satisfying than groups of two or four or more",
+            "Only comedy benefits from grouping items in threes",
+            "Lists should always contain at least five items for credibility",
+          ],
+          correct: 1,
+        },
+      },
+    ],
+  },
 ];
 
 if (typeof module !== "undefined") module.exports = TRACKS;
